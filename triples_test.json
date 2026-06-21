@@ -1,0 +1,552 @@
+[
+  {
+    "source": "Ragas",
+    "relationship": "IS_A",
+    "target": "framework"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "EVALUATES",
+    "target": "Retrieval Augmented Generation (RAG) pipelines"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG) systems",
+    "relationship": "COMPOSED_OF",
+    "target": "retrieval module"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG) systems",
+    "relationship": "COMPOSED_OF",
+    "target": "LLM based generation module"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "PROVIDES",
+    "target": "suite of metrics"
+  },
+  {
+    "source": "suite of metrics",
+    "relationship": "EVALUATES",
+    "target": "retrieval system ability to identify relevant and focused context passages"
+  },
+  {
+    "source": "suite of metrics",
+    "relationship": "EVALUATES",
+    "target": "LLM ability to exploit passages in a faithful way"
+  },
+  {
+    "source": "suite of metrics",
+    "relationship": "EVALUATES",
+    "target": "quality of generation"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "USES",
+    "target": "reference-free evaluation"
+  },
+  {
+    "source": "Language Models (LMs)",
+    "relationship": "capture",
+    "target": "knowledge"
+  },
+  {
+    "source": "BERT",
+    "relationship": "is a",
+    "target": "Language Model"
+  },
+  {
+    "source": "Large Language Models (LLMs)",
+    "relationship": "rival performance on",
+    "target": "question answering benchmarks"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG)",
+    "relationship": "is a",
+    "target": "method"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG)",
+    "relationship": "uses",
+    "target": "retrieval model"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG)",
+    "relationship": "uses",
+    "target": "corpus"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG)",
+    "relationship": "uses",
+    "target": "Language Model (LM)"
+  },
+  {
+    "source": "retrieval-augmented language modelling",
+    "relationship": "is a",
+    "target": "method"
+  },
+  {
+    "source": "retrieval-augmented language modelling",
+    "relationship": "uses",
+    "target": "specialised LMs"
+  },
+  {
+    "source": "retrieved documents",
+    "relationship": "are added to input of",
+    "target": "standard LM"
+  },
+  {
+    "source": "Retrieval Augmented Generation (RAG)",
+    "relationship": "is evaluated by",
+    "target": "language modelling task"
+  },
+  {
+    "source": "language modelling task",
+    "relationship": "uses metric",
+    "target": "perplexity"
+  },
+  {
+    "source": "question answering",
+    "relationship": "is an",
+    "target": "evaluation task"
+  },
+  {
+    "source": "question answering",
+    "relationship": "uses",
+    "target": "datasets with short extractive answers"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "is a",
+    "target": "framework"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "assesses",
+    "target": "retrieval augmented generation systems"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "integrates with",
+    "target": "llama-index"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "integrates with",
+    "target": "Langchain"
+  },
+  {
+    "source": "llama-index",
+    "relationship": "is a",
+    "target": "framework"
+  },
+  {
+    "source": "Langchain",
+    "relationship": "is a",
+    "target": "framework"
+  },
+  {
+    "source": "LLMs",
+    "relationship": "used_for",
+    "target": "Estimating faithfulness"
+  },
+  {
+    "source": "few-shot prompting strategy",
+    "relationship": "used_for",
+    "target": "predicting factuality"
+  },
+  {
+    "source": "linking generated responses to external knowledge base",
+    "relationship": "used_for",
+    "target": "detecting hallucinations"
+  },
+  {
+    "source": "BARTScore",
+    "relationship": "estimates",
+    "target": "factuality"
+  },
+  {
+    "source": "BARTScore",
+    "relationship": "uses",
+    "target": "conditional probability of generated text given input"
+  },
+  {
+    "source": "variation of token probability inspection",
+    "relationship": "used_for",
+    "target": "validating model generated answers"
+  },
+  {
+    "source": "multiple-choice question formulation",
+    "relationship": "used_for",
+    "target": "validating model generated answers"
+  },
+  {
+    "source": "supervised classifier on hidden layer weights",
+    "relationship": "used_for",
+    "target": "predicting truthfulness of statements"
+  },
+  {
+    "source": "SelfCheckGPT",
+    "relationship": "method_for",
+    "target": "detecting hallucinations without token probabilities"
+  },
+  {
+    "source": "SelfCheckGPT",
+    "relationship": "relies_on",
+    "target": "sampling multiple answers"
+  },
+  {
+    "source": "SelfCheckGPT",
+    "relationship": "assumes",
+    "target": "factual answers are semantically stable across samples"
+  },
+  {
+    "source": "GPTScore",
+    "relationship": "USES_METHOD",
+    "target": "prompt-based scoring"
+  },
+  {
+    "source": "GPTScore",
+    "relationship": "SCORES_BASED_ON",
+    "target": "average probability of generated tokens"
+  },
+  {
+    "source": "GPTScore",
+    "relationship": "USES_MODEL",
+    "target": "autoregressive language model"
+  },
+  {
+    "source": "prompt-based scoring",
+    "relationship": "PREVIOUSLY_USED_BY",
+    "target": "Yuan et al. (2021)"
+  },
+  {
+    "source": "Yuan et al. (2021)",
+    "relationship": "USES_MODEL",
+    "target": "BART"
+  },
+  {
+    "source": "ChatGPT",
+    "relationship": "USED_FOR",
+    "target": "evaluating aspects of generated text"
+  },
+  {
+    "source": "ChatGPT",
+    "relationship": "PROVIDES",
+    "target": "score between 0 and 100"
+  },
+  {
+    "source": "ChatGPT",
+    "relationship": "PROVIDES",
+    "target": "5-star rating"
+  },
+  {
+    "source": "LLM",
+    "relationship": "USED_FOR",
+    "target": "selecting best answer among candidates"
+  },
+  {
+    "source": "BERTScore",
+    "relationship": "USES",
+    "target": "contextualized embeddings"
+  },
+  {
+    "source": "BERTScore",
+    "relationship": "USES_MODEL",
+    "target": "pre-trained BERT"
+  },
+  {
+    "source": "BERTScore",
+    "relationship": "COMPARES",
+    "target": "generated answer and reference answers"
+  },
+  {
+    "source": "MoverScore",
+    "relationship": "USES",
+    "target": "contextualized embeddings"
+  },
+  {
+    "source": "MoverScore",
+    "relationship": "USES_MODEL",
+    "target": "pre-trained BERT"
+  },
+  {
+    "source": "MoverScore",
+    "relationship": "COMPARES",
+    "target": "generated answer and reference answers"
+  },
+  {
+    "source": "BARTScore",
+    "relationship": "USES",
+    "target": "reference answers"
+  },
+  {
+    "source": "BARTScore",
+    "relationship": "COMPUTES_METRIC",
+    "target": "precision"
+  },
+  {
+    "source": "BARTScore",
+    "relationship": "COMPUTES_METRIC",
+    "target": "recall"
+  },
+  {
+    "source": "precision",
+    "relationship": "ESTIMATED_AS",
+    "target": "probability of generating generated answer given reference"
+  },
+  {
+    "source": "recall",
+    "relationship": "ESTIMATED_AS",
+    "target": "probability of generating reference given generated answer"
+  },
+  {
+    "source": "RAG system",
+    "relationship": "USES",
+    "target": "retrieved context"
+  },
+  {
+    "source": "RAG system",
+    "relationship": "GENERATES",
+    "target": "answer"
+  },
+  {
+    "source": "Faithfulness",
+    "relationship": "IS_A",
+    "target": "metric"
+  },
+  {
+    "source": "Faithfulness",
+    "relationship": "MEASURES",
+    "target": "factual consistency"
+  },
+  {
+    "source": "Answer Relevance",
+    "relationship": "IS_A",
+    "target": "metric"
+  },
+  {
+    "source": "Answer Relevance",
+    "relationship": "MEASURES",
+    "target": "answer addressing question"
+  },
+  {
+    "source": "Context Relevance",
+    "relationship": "IS_A",
+    "target": "metric"
+  },
+  {
+    "source": "Context Relevance",
+    "relationship": "MEASURES",
+    "target": "focus of retrieved context"
+  },
+  {
+    "source": "LLM",
+    "relationship": "USED_FOR",
+    "target": "automated measurement of quality aspects"
+  },
+  {
+    "source": "gpt-3.5-turbo-16k",
+    "relationship": "IS_A",
+    "target": "LLM"
+  },
+  {
+    "source": "gpt-3.5-turbo-16k",
+    "relationship": "USED_VIA",
+    "target": "OpenAI API"
+  },
+  {
+    "source": "LLM",
+    "relationship": "EXTRACTS",
+    "target": "set of statements S(as(q))"
+  },
+  {
+    "source": "LLM",
+    "relationship": "USES",
+    "target": "verification function v(si,c(q))"
+  },
+  {
+    "source": "verification function v(si,c(q))",
+    "relationship": "PERFORMS",
+    "target": "faithfulness evaluation"
+  },
+  {
+    "source": "faithfulness score F",
+    "relationship": "COMPUTED_AS",
+    "target": "|V| / |S|"
+  },
+  {
+    "source": "LLM",
+    "relationship": "GENERATES",
+    "target": "n potential questions qi"
+  },
+  {
+    "source": "text-embedding-ada-002 model",
+    "relationship": "PROVIDES",
+    "target": "embeddings for questions qi"
+  },
+  {
+    "source": "answer relevance score AR",
+    "relationship": "COMPUTED_FROM",
+    "target": "cosine similarity between embeddings of q and qi"
+  },
+  {
+    "source": "LLM",
+    "relationship": "EXTRACTS",
+    "target": "subset of sentences Sext from context c(q)"
+  },
+  {
+    "source": "subset of sentences Sext",
+    "relationship": "REPRESENTS",
+    "target": "relevant context for question q"
+  },
+  {
+    "source": "WikiEval4",
+    "relationship": "IS_A",
+    "target": "Dataset"
+  },
+  {
+    "source": "WikiEval4",
+    "relationship": "CONTAINS",
+    "target": "question-context-answer triples"
+  },
+  {
+    "source": "ChatGPT",
+    "relationship": "USED_FOR",
+    "target": "question generation"
+  },
+  {
+    "source": "ChatGPT",
+    "relationship": "USED_FOR",
+    "target": "answer generation"
+  },
+  {
+    "source": "faithfulness",
+    "relationship": "IS_A",
+    "target": "Metric"
+  },
+  {
+    "source": "answer relevance",
+    "relationship": "IS_A",
+    "target": "Metric"
+  },
+  {
+    "source": "context relevance",
+    "relationship": "IS_A",
+    "target": "Metric"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "IS_A",
+    "target": "Method"
+  },
+  {
+    "source": "GPT Score",
+    "relationship": "IS_A",
+    "target": "Method"
+  },
+  {
+    "source": "GPT Ranking",
+    "relationship": "IS_A",
+    "target": "Method"
+  },
+  {
+    "source": "Faithfulness",
+    "relationship": "IS_A",
+    "target": "Metric"
+  },
+  {
+    "source": "Answer Relevance",
+    "relationship": "IS_A",
+    "target": "Metric"
+  },
+  {
+    "source": "Context Relevance",
+    "relationship": "IS_A",
+    "target": "Metric"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "EVALUATES_WITH",
+    "target": "Faithfulness"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "EVALUATES_WITH",
+    "target": "Answer Relevance"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "EVALUATES_WITH",
+    "target": "Context Relevance"
+  },
+  {
+    "source": "GPT Score",
+    "relationship": "EVALUATES_WITH",
+    "target": "Faithfulness"
+  },
+  {
+    "source": "GPT Score",
+    "relationship": "EVALUATES_WITH",
+    "target": "Answer Relevance"
+  },
+  {
+    "source": "GPT Score",
+    "relationship": "EVALUATES_WITH",
+    "target": "Context Relevance"
+  },
+  {
+    "source": "GPT Ranking",
+    "relationship": "EVALUATES_WITH",
+    "target": "Faithfulness"
+  },
+  {
+    "source": "GPT Ranking",
+    "relationship": "EVALUATES_WITH",
+    "target": "Answer Relevance"
+  },
+  {
+    "source": "GPT Ranking",
+    "relationship": "EVALUATES_WITH",
+    "target": "Context Relevance"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "PART_OF",
+    "target": "RAG (Retrieval-Augmented Generation) Metrics"
+  },
+  {
+    "source": "RAG (Retrieval-Augmented Generation) Metrics",
+    "relationship": "INCLUDES",
+    "target": "Faithfulness"
+  },
+  {
+    "source": "RAG (Retrieval-Augmented Generation) Metrics",
+    "relationship": "INCLUDES",
+    "target": "Answer Relevance"
+  },
+  {
+    "source": "RAG (Retrieval-Augmented Generation) Metrics",
+    "relationship": "INCLUDES",
+    "target": "Context Relevance"
+  },
+  {
+    "source": "LLM Evaluation Frameworks",
+    "relationship": "BENCHMARKS",
+    "target": "Large Language Models"
+  },
+  {
+    "source": "Ragas",
+    "relationship": "USED_IN",
+    "target": "LLM Evaluation Frameworks"
+  },
+  {
+    "source": "GPT Score",
+    "relationship": "USED_IN",
+    "target": "LLM Evaluation Frameworks"
+  },
+  {
+    "source": "GPT Ranking",
+    "relationship": "USED_IN",
+    "target": "LLM Evaluation Frameworks"
+  }
+]
