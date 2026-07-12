@@ -31,6 +31,8 @@ The system extracts **text, tables, and images** from research papers, construct
 
 ![System Architecture](images/System_Architecture_Ragpipeline.jpeg)
 
+## Neo4j Knowledge Graph
+
 ![Neo4j Knowledge Graph](images/visualisation.png)
 ---
 
