@@ -27,36 +27,9 @@ The system extracts **text, tables, and images** from research papers, construct
 
 ---
 
-# System Architecture
+## System Architecture
 
-```
-                           User Question
-                                  │
-                                  ▼
-                     Hybrid Retrieval Pipeline
-                 ┌────────────────────────────┐
-                 │                            │
-                 ▼                            ▼
-          Chroma Vector Search        Neo4j Graph Search
-                 │                            │
-                 └──────────────┬─────────────┘
-                                ▼
-                         Context Fusion
-                                ▼
-                     Answer Generation
-                                ▼
-                      Grounding Agent
-                     ┌──────────┴──────────┐
-                     │                     │
-                GROUNDED          NOT GROUNDED
-                     │                     │
-                     ▼                     ▼
-          Return Local Answer      Web Agent (LLM)
-                                         │
-                                         ▼
-                             External Knowledge Response
-```
-
+![System Architecture](images/System_Architecture_Ragpipeline.jpeg)
 ---
 
 # Workflow
@@ -130,37 +103,7 @@ Used for:
 
 ---
 
-# Project Structure
-
-```
-Hybrid-Graph-RAG/
-│
-├── Hybrid_Graph_RAG.ipynb
-├── README.md
-├── requirements.txt
-├── .env.example
-│
-├── data/
-│   ├── pdfs/
-│   ├── telemetry.jsonl
-│   └── benchmark_results.csv
-│
-├── chroma_db/
-│
-└── images/
-```
-
----
-
 # Installation
-
-Clone the repository.
-
-```bash
-git clone https://github.com/<your-username>/Hybrid-Graph-RAG.git
-
-cd Hybrid-Graph-RAG
-```
 
 Install all dependencies.
 
