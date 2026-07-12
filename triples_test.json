@@ -32,7 +32,7 @@
   {
     "source": "suite of metrics",
     "relationship": "EVALUATES",
-    "target": "LLM ability to exploit passages in a faithful way"
+    "target": "LLM ability to exploit context passages in a faithful way"
   },
   {
     "source": "suite of metrics",
@@ -40,12 +40,7 @@
     "target": "quality of generation"
   },
   {
-    "source": "Ragas",
-    "relationship": "USES",
-    "target": "reference-free evaluation"
-  },
-  {
-    "source": "Language Models (LMs)",
+    "source": "Language Models",
     "relationship": "capture",
     "target": "knowledge"
   },
@@ -55,58 +50,53 @@
     "target": "Language Model"
   },
   {
-    "source": "Large Language Models (LLMs)",
-    "relationship": "rival performance on",
+    "source": "Large Language Models",
+    "relationship": "capture",
+    "target": "knowledge"
+  },
+  {
+    "source": "Large Language Models",
+    "relationship": "perform on",
     "target": "question answering benchmarks"
   },
   {
-    "source": "Retrieval Augmented Generation (RAG)",
+    "source": "Retrieval Augmented Generation",
     "relationship": "is a",
     "target": "method"
   },
   {
-    "source": "Retrieval Augmented Generation (RAG)",
-    "relationship": "uses",
-    "target": "retrieval model"
+    "source": "Retrieval Augmented Generation",
+    "relationship": "retrieves",
+    "target": "relevant passages"
   },
   {
-    "source": "Retrieval Augmented Generation (RAG)",
-    "relationship": "uses",
-    "target": "corpus"
-  },
-  {
-    "source": "Retrieval Augmented Generation (RAG)",
-    "relationship": "uses",
-    "target": "Language Model (LM)"
-  },
-  {
-    "source": "retrieval-augmented language modelling",
-    "relationship": "is a",
-    "target": "method"
+    "source": "Retrieval Augmented Generation",
+    "relationship": "feeds passages to",
+    "target": "Language Model"
   },
   {
     "source": "retrieval-augmented language modelling",
     "relationship": "uses",
-    "target": "specialised LMs"
+    "target": "specialised Language Models"
   },
   {
-    "source": "retrieved documents",
-    "relationship": "are added to input of",
-    "target": "standard LM"
+    "source": "retrieval-augmented strategies",
+    "relationship": "combine with",
+    "target": "Large Language Models"
   },
   {
-    "source": "Retrieval Augmented Generation (RAG)",
-    "relationship": "is evaluated by",
+    "source": "Retrieval Augmented Generation systems",
+    "relationship": "evaluated by",
     "target": "language modelling task"
   },
   {
     "source": "language modelling task",
-    "relationship": "uses metric",
+    "relationship": "measured by",
     "target": "perplexity"
   },
   {
     "source": "question answering",
-    "relationship": "is an",
+    "relationship": "is a",
     "target": "evaluation task"
   },
   {
@@ -116,38 +106,38 @@
   },
   {
     "source": "Ragas",
-    "relationship": "is a",
+    "relationship": "IS_A",
     "target": "framework"
   },
   {
     "source": "Ragas",
-    "relationship": "assesses",
-    "target": "retrieval augmented generation systems"
+    "relationship": "FOR",
+    "target": "automated assessment of retrieval augmented generation systems"
   },
   {
     "source": "Ragas",
-    "relationship": "integrates with",
+    "relationship": "INTEGRATES_WITH",
     "target": "llama-index"
   },
   {
     "source": "Ragas",
-    "relationship": "integrates with",
+    "relationship": "INTEGRATES_WITH",
     "target": "Langchain"
   },
   {
     "source": "llama-index",
-    "relationship": "is a",
+    "relationship": "IS_A",
     "target": "framework"
   },
   {
     "source": "Langchain",
-    "relationship": "is a",
+    "relationship": "IS_A",
     "target": "framework"
   },
   {
-    "source": "LLMs",
-    "relationship": "used_for",
-    "target": "Estimating faithfulness"
+    "source": "retrieval augmented generation",
+    "relationship": "IS_A",
+    "target": "concept"
   },
   {
     "source": "few-shot prompting strategy",
@@ -170,14 +160,9 @@
     "target": "conditional probability of generated text given input"
   },
   {
-    "source": "variation of token probability inspection",
+    "source": "variation of BARTScore idea",
     "relationship": "used_for",
-    "target": "validating model generated answers"
-  },
-  {
-    "source": "multiple-choice question formulation",
-    "relationship": "used_for",
-    "target": "validating model generated answers"
+    "target": "validating model generated answers as multiple-choice question"
   },
   {
     "source": "supervised classifier on hidden layer weights",
@@ -195,9 +180,9 @@
     "target": "sampling multiple answers"
   },
   {
-    "source": "SelfCheckGPT",
-    "relationship": "assumes",
-    "target": "factual answers are semantically stable across samples"
+    "source": "factual answers",
+    "relationship": "characterized_by",
+    "target": "semantic stability across samples"
   },
   {
     "source": "GPTScore",
@@ -301,63 +286,63 @@
   },
   {
     "source": "RAG system",
-    "relationship": "USES",
-    "target": "retrieved context"
+    "relationship": "USES_METHOD",
+    "target": "retrieval of context"
   },
   {
     "source": "RAG system",
-    "relationship": "GENERATES",
-    "target": "answer"
+    "relationship": "USES_METHOD",
+    "target": "generation of answer"
   },
   {
     "source": "Faithfulness",
-    "relationship": "IS_A",
-    "target": "metric"
+    "relationship": "IS_METRIC_FOR",
+    "target": "quality of generated answer"
   },
   {
     "source": "Faithfulness",
     "relationship": "MEASURES",
-    "target": "factual consistency"
+    "target": "grounding of answer in context"
   },
   {
     "source": "Answer Relevance",
-    "relationship": "IS_A",
-    "target": "metric"
+    "relationship": "IS_METRIC_FOR",
+    "target": "quality of generated answer"
   },
   {
     "source": "Answer Relevance",
     "relationship": "MEASURES",
-    "target": "answer addressing question"
+    "target": "addressing the actual question"
   },
   {
     "source": "Context Relevance",
-    "relationship": "IS_A",
-    "target": "metric"
+    "relationship": "IS_METRIC_FOR",
+    "target": "quality of retrieved context"
   },
   {
     "source": "Context Relevance",
     "relationship": "MEASURES",
-    "target": "focus of retrieved context"
+    "target": "focus and relevance of retrieved context"
   },
   {
-    "source": "LLM",
-    "relationship": "USED_FOR",
+    "source": "LLM prompting",
+    "relationship": "IS_METHOD_FOR",
     "target": "automated measurement of quality aspects"
   },
   {
     "source": "gpt-3.5-turbo-16k",
-    "relationship": "IS_A",
-    "target": "LLM"
+    "relationship": "IS_MODEL_USED_FOR",
+    "target": "LLM prompting"
   },
   {
-    "source": "gpt-3.5-turbo-16k",
-    "relationship": "USED_VIA",
-    "target": "OpenAI API"
+    "source": "Faithfulness estimation",
+    "relationship": "USES_METHOD",
+    "target": "statement extraction from answer"
   },
   {
-    "source": "LLM",
-    "relationship": "EXTRACTS",
-    "target": "set of statements S(as(q))"
+    "source": "statement extraction",
+    "relationship": "IS_METHOD_FOR",
+    "target": "decomposing sentences into assertions"
   },
   {
     "source": "LLM",
@@ -367,27 +352,27 @@
   {
     "source": "verification function v(si,c(q))",
     "relationship": "PERFORMS",
-    "target": "faithfulness evaluation"
+    "target": "verification step"
   },
   {
-    "source": "faithfulness score F",
+    "source": "final faithfulness score F",
     "relationship": "COMPUTED_AS",
     "target": "|V| / |S|"
   },
   {
-    "source": "LLM",
-    "relationship": "GENERATES",
-    "target": "n potential questions qi"
+    "source": "answer relevance score AR",
+    "relationship": "COMPUTED_USING",
+    "target": "cosine similarity between embeddings of question q and generated questions qi"
   },
   {
     "source": "text-embedding-ada-002 model",
     "relationship": "PROVIDES",
-    "target": "embeddings for questions qi"
+    "target": "embeddings for questions"
   },
   {
-    "source": "answer relevance score AR",
-    "relationship": "COMPUTED_FROM",
-    "target": "cosine similarity between embeddings of q and qi"
+    "source": "context relevance metric",
+    "relationship": "ESTIMATES",
+    "target": "relevance of context c(q) to question q"
   },
   {
     "source": "LLM",
@@ -395,59 +380,19 @@
     "target": "subset of sentences Sext from context c(q)"
   },
   {
-    "source": "subset of sentences Sext",
-    "relationship": "REPRESENTS",
-    "target": "relevant context for question q"
-  },
-  {
     "source": "WikiEval4",
     "relationship": "IS_A",
     "target": "Dataset"
   },
   {
-    "source": "WikiEval4",
-    "relationship": "CONTAINS",
-    "target": "question-context-answer triples"
+    "source": "ChatGPT",
+    "relationship": "USED_FOR",
+    "target": "Question Generation"
   },
   {
     "source": "ChatGPT",
     "relationship": "USED_FOR",
-    "target": "question generation"
-  },
-  {
-    "source": "ChatGPT",
-    "relationship": "USED_FOR",
-    "target": "answer generation"
-  },
-  {
-    "source": "faithfulness",
-    "relationship": "IS_A",
-    "target": "Metric"
-  },
-  {
-    "source": "answer relevance",
-    "relationship": "IS_A",
-    "target": "Metric"
-  },
-  {
-    "source": "context relevance",
-    "relationship": "IS_A",
-    "target": "Metric"
-  },
-  {
-    "source": "Ragas",
-    "relationship": "IS_A",
-    "target": "Method"
-  },
-  {
-    "source": "GPT Score",
-    "relationship": "IS_A",
-    "target": "Method"
-  },
-  {
-    "source": "GPT Ranking",
-    "relationship": "IS_A",
-    "target": "Method"
+    "target": "Answer Generation"
   },
   {
     "source": "Faithfulness",
@@ -465,88 +410,18 @@
     "target": "Metric"
   },
   {
-    "source": "Ragas",
-    "relationship": "EVALUATES_WITH",
-    "target": "Faithfulness"
+    "source": "Faithfulness",
+    "relationship": "EVALUATED_BY",
+    "target": "Human Judgements"
   },
   {
-    "source": "Ragas",
-    "relationship": "EVALUATES_WITH",
-    "target": "Answer Relevance"
+    "source": "Answer Relevance",
+    "relationship": "EVALUATED_BY",
+    "target": "Human Judgements"
   },
   {
-    "source": "Ragas",
-    "relationship": "EVALUATES_WITH",
-    "target": "Context Relevance"
-  },
-  {
-    "source": "GPT Score",
-    "relationship": "EVALUATES_WITH",
-    "target": "Faithfulness"
-  },
-  {
-    "source": "GPT Score",
-    "relationship": "EVALUATES_WITH",
-    "target": "Answer Relevance"
-  },
-  {
-    "source": "GPT Score",
-    "relationship": "EVALUATES_WITH",
-    "target": "Context Relevance"
-  },
-  {
-    "source": "GPT Ranking",
-    "relationship": "EVALUATES_WITH",
-    "target": "Faithfulness"
-  },
-  {
-    "source": "GPT Ranking",
-    "relationship": "EVALUATES_WITH",
-    "target": "Answer Relevance"
-  },
-  {
-    "source": "GPT Ranking",
-    "relationship": "EVALUATES_WITH",
-    "target": "Context Relevance"
-  },
-  {
-    "source": "Ragas",
-    "relationship": "PART_OF",
-    "target": "RAG (Retrieval-Augmented Generation) Metrics"
-  },
-  {
-    "source": "RAG (Retrieval-Augmented Generation) Metrics",
-    "relationship": "INCLUDES",
-    "target": "Faithfulness"
-  },
-  {
-    "source": "RAG (Retrieval-Augmented Generation) Metrics",
-    "relationship": "INCLUDES",
-    "target": "Answer Relevance"
-  },
-  {
-    "source": "RAG (Retrieval-Augmented Generation) Metrics",
-    "relationship": "INCLUDES",
-    "target": "Context Relevance"
-  },
-  {
-    "source": "LLM Evaluation Frameworks",
-    "relationship": "BENCHMARKS",
-    "target": "Large Language Models"
-  },
-  {
-    "source": "Ragas",
-    "relationship": "USED_IN",
-    "target": "LLM Evaluation Frameworks"
-  },
-  {
-    "source": "GPT Score",
-    "relationship": "USED_IN",
-    "target": "LLM Evaluation Frameworks"
-  },
-  {
-    "source": "GPT Ranking",
-    "relationship": "USED_IN",
-    "target": "LLM Evaluation Frameworks"
+    "source": "Context Relevance",
+    "relationship": "EVALUATED_BY",
+    "target": "Human Judgements"
   }
 ]
