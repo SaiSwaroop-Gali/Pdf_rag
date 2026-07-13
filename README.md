@@ -1,4 +1,4 @@
-# Hybrid Graph RAG for Research Paper Question Answering
+# Multi Model Hybrid Graph RAG for Research Paper Question Answering
 
 ## Overview
 
