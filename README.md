@@ -318,7 +318,7 @@ jupyter notebook
 Open:
 
 ```
-Project.ipynb
+Hybrid_Graph_RAG.ipynb
 ```
 
 Execute all notebook cells sequentially.
